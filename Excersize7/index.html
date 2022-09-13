@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Document</title> <!-- Appears in the tab at the top -->
+  </head>
+  <body>
+    <!-- creates an area for the user totype in an inout and puts text in it to describe what the desired inout is -->>
+    <input id="name-input" type="text" placeholder="Enter your name" />
+    <!-- Creates a button that can be clicked and has the text "click me" -->
+<button id="my-button">Click Me</button>
+
+<script>
+  var myButton = document.querySelector('#my-button');
+  var nameInput = document.querySelector('#name-input');
+
+   
+  myButton.addEventListener('click', function () { 
+    if (nameInput.value !== '') {
+        
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
+    <!-- the above lines of code register the click of the button and once something has been entered and the button clicked a pop-up appears saying "hello (input)" -->
+  </body>
+</html>
